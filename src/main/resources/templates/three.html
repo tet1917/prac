@@ -2,16 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>fizzbazz</title>
+<title>ThreeFiveSeven</title>
 </head>
 <body>
-	<h1>fizzbazz演習</h1>
-	<form action="/fizzbazz" method="post">
-		<input name="quantity" type="number">
+	<h1>ThreeFiveSeven演習</h1>
+	<form action="/three" method="post">
+		<input name="Par" type="number">
 		<input type="submit" value="計算する">
 	</form>
 <ul style="list-style: none;" th:each="list:${list1}">
     <li th:text="${list}"></li>
 </ul>
 </body>
-</html>
